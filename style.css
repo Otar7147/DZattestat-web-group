@@ -1,0 +1,458 @@
+/* для тега <body>, всего тела страницы */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding-left:  70px;
+    padding-right:  70px;
+   }
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(33, 59, 126, 1);
+}
+
+.site-logo {
+    width: auto;
+    }
+
+.site-menu {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+.site-menu > li {
+    display: flex;
+    min-height: 80px;
+        }
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 0 18px;
+    background-color: #213b7E;
+    }
+        
+.menu-link:hover {
+    color: #213b7E;
+    background-color: #ffffff;
+    text-decoration: none;
+    }
+
+/* "кнопка" "Войти" в строке меню сайта */
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #EA5D21;
+    text-decoration: none;
+}
+
+.login-popup {
+    display: none;
+    z-index: 2;
+    bottom: 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 56px;
+    background-color: white;
+    border: 1px solid #213b7E;
+    box-shadow: 5px 5px 4px 0 rgba(0,0,0,0.25);
+    }
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-heading {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 36px;
+    margin-top: 26px;
+}
+
+.popup-button {
+    position: static;
+    border: 0;
+    margin-top: 15px;
+    width: 153px;
+    height: 50px;
+    left: 644px;
+    top: 472px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    background: #EA6113;
+}
+
+.login-input::placeholder,
+.password-input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.login-form > input {
+    width: 100%;
+    margin-bottom: 56px;
+    max-width: 444px;
+    min-height: 55px;
+    border: 1px solid #808080;
+}
+
+.show-popup {
+    display: block;
+    }
+
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 911px;
+    margin: 0 auto;
+    /* padding: 0 2vw; */
+    flex-grow: 1;
+    }
+
+.main-students {
+    max-width: 1202px;
+}
+/* изображение компьютерного класса после заголовка */
+.class-photo {
+    object-fit: cover;
+    width: 100%;
+    max-width: 523px;
+    height: 316px;
+    margin-bottom: 11px;
+    margin-left: 28px;
+}
+/* Главный заголовок "Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!" */
+.main-heiading {
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height:  1.17;
+    width: 100%;
+    margin: 33px 0px 25px 28px;
+}
+/* Подзаголовок 1 уровня */
+h2  {
+    font-family:  Roboto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size:  25px;
+    line-height: 1.17;
+}
+
+/* Параграф - текст под подзаголовком 1 уровня */
+.intro-text {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 28px;
+    width: 100%;
+    max-width: 616px;
+    font-family:  Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+/* выделение текста жирным в параграфе */
+.intro-text> strong {
+    font-weight: 700; 
+ }
+
+/* Учимся вместе */
+
+.intro-wapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro-aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 183px;
+    height: 125px;
+    margin-top: -20px;
+    margin-right: -43px;
+    justify-content: center;
+    color: rgba(100, 100, 100, 1);
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    }
+   
+.intro-aside > blockquote {
+    margin: 0;
+    width: 177px;
+}
+
+.intro-left::after {
+    content: '\201C';
+    position: absolute;
+    left: -19px;
+    }
+
+.intro-right::after {
+    content: '\201D';
+}
+
+/* Тег <em> предназначен для акцентирования текста. Браузеры отображают такой текст курсивным начертанием - "сами" */
+em {
+    color: #Cf5510;
+    font-style: initial;
+}
+/* CSS для страницы "Студуенты" */
+
+.student-header {
+    margin-bottom: 37px;
+
+}
+
+.student-heading {
+    max-width: 1202px;
+    padding: 0 14px;
+    margin: 0 auto;
+    margin-bottom: 24px; 
+    box-sizing: border-box;
+}
+
+.student-heading::after {
+    content: '👧👦';
+}
+
+.students {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1202px;
+    gap: 50px;
+    padding: 0 13px;
+    box-sizing: border-box;
+    margin:  0 auto;
+}
+
+.student {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid black;
+    box-sizing: border-box;
+    width: 200px;
+    flex: 1 1 0;
+    background-color: bisque;
+}
+
+@media (min-width: 1150px) {
+    .student {
+        max-width: calc(100% / 2);
+    }
+}
+
+.student-new {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: -13px;
+    display: flex;
+    padding: 2px 5px;
+    border-radius: 20px;
+    background-color: #3aa828;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.student img {
+    object-position: bottom;
+    object-fit: contain;
+    min-height: 270px;
+}
+
+.student-name {
+    margin: 0;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+}
+
+/* «подвал» страницы (нижняя панель)  */
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #213b7E;
+    }
+    /* about */
+.main-about {
+    max-width: 100%;
+    }
+
+.about-header {
+    margin-bottom: 33px;
+}
+
+.about-video {
+    width: 100%;
+    min-height: 550px;
+    }
+
+.about-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    }
+
+.about-h1 {
+    margin-top: 0;
+}
+    
+    /* contacts */
+
+.contacts-header {
+margin-bottom: 33px;
+}
+
+.contacts-heading {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contacts-maps {
+    width: 100%;
+    margin-bottom: 15px;
+    }
+    
+.contacts-text {
+    max-width: 820px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    }
+
+.contacts-adress {
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    }
+
+.adres-text {
+    margin-top: 0;
+    }
+
+.contacts-tel {
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    }
+
+    /* <p> в <footer> */
+.copywrite {
+    color: rgba(255, 255, 255, 0.5);
+    }
+/* ссылка в параграфе в футе (нижней панели) на "иннополис" */
+.inoop-link {
+    color: rgba(255, 255, 255, 0.5);    
+    }
+
+
+@media (max-width: 520px) {
+    .header {
+        justify-content: center;
+        padding: 1em 1px;
+        }
+    .site-logo {
+        width: 100%;
+        min-height: 80px;
+        }
+    .site-menu {
+        justify-content: center;
+        }
+    }
+/* JS */
+
+.active-link:visited {
+    color: #213b7E;
+    background-color: #ffffff;
+    text-decoration: underline;
+    }
